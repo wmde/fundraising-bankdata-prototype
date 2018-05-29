@@ -51,40 +51,6 @@ $( function () {
     'donationFormContent'
   );
 
-  WMDE.StoreUpdates.connectValidatorsToStore(
-    function ( initialValues ) {
-      return [
-        WMDE.ValidationDispatchers.createAmountValidationDispatcher(
-          WMDE.FormValidation.createAmountValidator(
-              initData.data( 'validate-amount-url' )
-           ),
-          initialValues
-        ),
-        WMDE.ValidationDispatchers.createAddressValidationDispatcher(
-          WMDE.FormValidation.createAddressValidator(
-            initData.data( 'validate-address-url' ),
-            WMDE.FormValidation.DefaultRequiredFieldsForAddressType
-          ),
-          initialValues
-        ),
-        WMDE.ValidationDispatchers.createEmailValidationDispatcher(
-          WMDE.FormValidation.createEmailAddressValidator( initData.data( 'validate-email-address-url' ) ),
-          initialValues
-        ),
-        WMDE.ValidationDispatchers.createBankDataValidationDispatcher(
-          WMDE.FormValidation.createBankDataValidator(
-            initData.data( 'validate-iban-url' ),
-            initData.data( 'generate-iban-url' )
-          ),
-          initialValues
-        )
-      ];
-    },
-    store,
-    initData.data( 'initial-form-values' ),
-    'donationFormContent'
-  );
-
   // Connect view handlers to changes in specific parts in the global state, designated by 'stateKey'
   WMDE.StoreUpdates.connectViewHandlersToStore(
     [
@@ -151,10 +117,6 @@ $( function () {
       {
         viewHandler: WMDE.View.createFieldValueValidityIndicator( $( '.field-iban' ) ),
         stateKey: 'donationInputValidation.iban'
-      },
-      {
-        viewHandler: WMDE.View.createFieldValueValidityIndicator( $( '.field-bic' ) ),
-        stateKey: 'donationInputValidation.bic'
       },
       {
         viewHandler: WMDE.View.createFieldValueValidityIndicator( $( '.field-accountnumber' ) ),
