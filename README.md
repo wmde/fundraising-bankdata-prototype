@@ -8,3 +8,6 @@ IBAN cases:
 
 Account number case:
 - If the first two characters are digits, the label of the field below changes from "BIC/Bankleitzahl" to "Bankleitzahl".
+
+
+Prototype available at: https://wmde.github.io/fundraising-bankdata-prototype/
