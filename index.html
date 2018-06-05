@@ -310,11 +310,11 @@
 													<label for="last-name" class="sr-only">Name</label>
 													<span class="error-text">Nachname ist ungültig.</span>
 												</div>
-												<div class="field-grp field-email">
+												<!-- <div class="field-grp field-email">
 													<input id="email" placeholder="E-Mail" data-pattern="^[^@]+@.+$" type="email">
 													<label for="email" class="sr-only">E-Mail</label>
 													<span class="error-text">Email ist ungültig.</span>
-												</div>
+												</div>  -->
 												<div class="field-grp field-street">
 													<input id="street" placeholder="Straße und Hausnummer" data-pattern="^.+$" type="text">
 													<label for="street" class="sr-only">Straße und Hausnummer</label>
@@ -343,12 +343,12 @@
 																					</select>
 											</div>
 											<div class="wrap-check">
-												<div>
+												<!-- <div>
 													<input id="newsletter" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
 													<label class="news" for="newsletter">
 												Ja, ich möchte in Zukunft informiert werden, wenn Wikipedia meine Hilfe braucht.<br>Die Einwilligung kann ich jederzeit per E-Mail an spenden@wikimedia.de mit Wirkung für die Zukunft widerrufen.
 											</label>
-												</div>
+												</div> -->
 												<div>
 													<input id="donation-receipt" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
 													<label for="donation-receipt" class="">
@@ -373,11 +373,11 @@
 													<label for="company-name" class="sr-only">Firmenname</label>
 													<span class="error-text">Firmenname ist ungültig.</span>
 												</div>
-												<div class="field-grp field-email">
+												<!-- <div class="field-grp field-email">
 													<input id="email-company" name="email" placeholder="E-Mail" data-pattern="^[^@]+@.+$" type="email">
 													<label for="email-company" class="sr-only">E-Mail</label>
 													<span class="error-text">Email ist ungültig.</span>
-												</div>
+												</div> -->
 												<div class="field-grp field-street">
 													<input id="adress-company" name="street" placeholder="Straße und Hausnummer" data-pattern="^.+$" type="text">
 													<label for="adress-company" class="sr-only">Straße und Hausnummer</label>
@@ -436,6 +436,28 @@
 									</div>
 								</fieldset>
 							</section>
+
+							<section id="donation-mail" class="donation-data clearfix" style="width:100%; padding-bottom:3em; margin-top:-2em;">
+								<h2>e-Mail</h2>
+
+								<p class="legend">Wollen sie unseren Newsletter bekommen?</p>
+								<fieldset style="display:flex">
+									<div style="width:50%; padding-right:1em; border-right:1px solid #00adee;">
+										<input id="newsletter" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
+										<label class="news" for="newsletter">
+									Ja, ich möchte in Zukunft informiert werden, wenn Wikipedia meine Hilfe braucht.<br>Die Einwilligung kann ich jederzeit per E-Mail an spenden@wikimedia.de mit Wirkung für die Zukunft widerrufen.
+										</label>
+									</div>
+									
+									<div class="field-grp field-iba" style="width:50%; margin-left:1.5em">
+										<input id="email" name="email" placeholder="e-Mail" type="text" data-pattern="^[^@]+@.+$" type="email">
+										<label for="email" class="sr-only">Ihre e-Mail-Adresse</label>
+									</div>
+
+									
+								</fieldset>
+							</section>
+
 
 						</div>
 
