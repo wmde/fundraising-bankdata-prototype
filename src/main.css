@@ -7466,3 +7466,7 @@ main.conclusion .switch-container{
 #bic[readonly] {
 	background-color: #ddd;
 }
+
+#donation-mail .wrap-input:after {
+  border: none;
+}

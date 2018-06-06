@@ -310,11 +310,11 @@
 													<label for="last-name" class="sr-only">Name</label>
 													<span class="error-text">Nachname ist ungültig.</span>
 												</div>
-												<!-- <div class="field-grp field-email">
+												<!--<div class="field-grp field-email">
 													<input id="email" placeholder="E-Mail" data-pattern="^[^@]+@.+$" type="email">
 													<label for="email" class="sr-only">E-Mail</label>
 													<span class="error-text">Email ist ungültig.</span>
-												</div>  -->
+												</div>-->
 												<div class="field-grp field-street">
 													<input id="street" placeholder="Straße und Hausnummer" data-pattern="^.+$" type="text">
 													<label for="street" class="sr-only">Straße und Hausnummer</label>
@@ -353,7 +353,7 @@
 													<input id="donation-receipt" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
 													<label for="donation-receipt" class="">
 												Nein, ich benötige keine Spendenbescheinigung.
-											</label>
+													</label>
 												</div>
 											</div>
 										</div>
@@ -373,11 +373,11 @@
 													<label for="company-name" class="sr-only">Firmenname</label>
 													<span class="error-text">Firmenname ist ungültig.</span>
 												</div>
-												<!-- <div class="field-grp field-email">
+												<!--<div class="field-grp field-email">
 													<input id="email-company" name="email" placeholder="E-Mail" data-pattern="^[^@]+@.+$" type="email">
 													<label for="email-company" class="sr-only">E-Mail</label>
 													<span class="error-text">Email ist ungültig.</span>
-												</div> -->
+												</div>-->
 												<div class="field-grp field-street">
 													<input id="adress-company" name="street" placeholder="Straße und Hausnummer" data-pattern="^.+$" type="text">
 													<label for="adress-company" class="sr-only">Straße und Hausnummer</label>
@@ -403,15 +403,15 @@
 																							<option value="IT">Italien</option>
 																							<option value="LI">Liechtenstein</option>
 																							<option value="LU">Luxemburg</option>
-																					</select><span class="jcf-select jcf-unselectable jcf-select-no-outline jcf-select-country-select jcf-select-jcf-hidden selected-item" title="Land"><span class="jcf-select-text"><span class="">Deutschland</span></span><span class="jcf-select-opener"></span></span><span class="jcf-select jcf-unselectable jcf-select-no-outline jcf-select-country-select selected-item" title="Land"><span class="jcf-select-text"><span class="">Deutschland</span></span><span class="jcf-select-opener"></span></span>
+																					</select>
 											</div>
 											<div class="wrap-check">
-												<div>
+												<!--<div>
 													<input id="newsletter-company" name="info" value="1" type="checkbox">
 													<label class="news" for="newsletter-company">
 												Ja, ich möchte in Zukunft informiert werden, wenn Wikipedia meine Hilfe braucht.<br>Die Einwilligung kann ich jederzeit per E-Mail an spenden@wikimedia.de mit Wirkung für die Zukunft widerrufen.
 											</label>
-												</div>
+												</div>-->
 												<div>
 													<input id="donation-receipt-company" name="donationReceipt" value="0" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
 													<label for="donation-receipt-company" class="">
@@ -437,27 +437,43 @@
 								</fieldset>
 							</section>
 
+							<!-- EMAIL PROTOTYPE -->
 							<section id="donation-mail" class="donation-data clearfix" style="width:100%; padding-bottom:3em; margin-top:-2em;">
 								<h2>e-Mail</h2>
 
 								<p class="legend">Wollen sie unseren Newsletter bekommen?</p>
-								<fieldset style="display:flex">
-									<div style="width:50%; padding-right:1em; border-right:1px solid #00adee;">
-										<input id="newsletter" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
-										<label class="news" for="newsletter">
-									Ja, ich möchte in Zukunft informiert werden, wenn Wikipedia meine Hilfe braucht.<br>Die Einwilligung kann ich jederzeit per E-Mail an spenden@wikimedia.de mit Wirkung für die Zukunft widerrufen.
-										</label>
+								<fieldset id="type-donor" class="show-info padding-right-4 col-xs-12 col-sm-8 col-sm-offset-right-4 col-md-6 col-md-offset-right-7 no-gutter-left" style="display: flex">
+
+									<div class="wrap-field selected">
+										<div class="wrap-input" style="border: none">
+										</div>
+										<div class="wrap-info">
+											<div class="info-text opened" style="border: none">
+
+												<div class="field-grp field-email">
+													<input id="email" placeholder="E-Mail" data-pattern="^[^@]+@.+$" type="email">
+													<label for="email" class="sr-only">E-Mail</label>
+													<span class="error-text">Email ist ungültig.</span>
+												</div>
+												
+											</div>
+											<div class="wrap-check">
+												<div>
+													<input id="newsletter" data-jcf="{&quot;wrapNative&quot;: true}" class="jcf" type="checkbox">
+													<label class="news" for="newsletter">
+												Ja, ich möchte in Zukunft informiert werden, wenn Wikipedia meine Hilfe braucht.<br>
+												Die Einwilligung kann ich jederzeit per E-Mail an spenden@wikimedia.de mit Wirkung für die Zukunft widerrufen.
+													</label>
+												</div>
+											</div>
+										</div>
 									</div>
 									
-									<div class="field-grp field-iba" style="width:50%; margin-left:1.5em">
-										<input id="email" name="email" placeholder="e-Mail" type="text" data-pattern="^[^@]+@.+$" type="email">
-										<label for="email" class="sr-only">Ihre e-Mail-Adresse</label>
-									</div>
 
 									
 								</fieldset>
 							</section>
-
+							<!-- EMAIL PROTOTYPE -->
 
 						</div>
 
